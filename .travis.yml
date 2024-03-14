@@ -1,0 +1,31 @@
+sudo: false
+
+language: php
+
+branches:
+  only:
+    - stable
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+before_install:
+  - composer self-update
+
+install:
+  - composer install --no-dev --no-interaction --ignore-platform-reqs
+  - zip -r --exclude='*.git*' --exclude='*.zip' --exclude='*.travis.yml' Core.zip .
+
+script:
+  - php think unit
+
+deploy:
+  provider: releases
+  api_key:
+    secure: <KEY>
+  file:
+    - Core.zip
+  skip_cleanup: true
+  on:
+    tags: true
