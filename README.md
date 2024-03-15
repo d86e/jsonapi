@@ -1,4 +1,4 @@
-# JSONAPI v1.0
+# JSONAPI
 
 > 运行环境要求 PHP7.2+, 建议 PHP7.4.33, 兼容 PHP8.0+
 
@@ -106,7 +106,7 @@ location / {
 程序还会读取 SQL 表的的注释做为接口的说明名称,  
 同时读取每个 SQL 表的字段信息做为接口参数说明,  
 包括 字段名, 字段类型, 默认值, 字段注释
-<img src="https://raw.githubusercontent.com/d86e/images/main/WX20240312-214529%402x.png" width="70%">
+<img src="https://gitee.com/d86e/images/raw/main/WX20240312-214529@2x.png" width="70%">
 
 如果需要自己写控制器和一些高级方法,  
 同样可以自动生成接口及文档
@@ -115,7 +115,7 @@ location / {
 会读取`@param `后面的字段名和注释,  
 字段名和注释中间用空格隔开,注释后面是必填,再后面是默认值,  
 示例 `@param name 产品的名字 否 Null`
-<img src="https://raw.githubusercontent.com/d86e/images/main/WX20240312-214712%402x.png" width="70%">
+<img src="https://gitee.com/d86e/images/raw/main/WX20240312-214712@2x.png" width="70%">
 
 ##### 二、接口访问事件
 
@@ -241,7 +241,7 @@ JSONAPI 的实现整体代码量极其的少,
 ## 打赏赞助
 
 如果 JSONAPI 对你有帮助, 请给项目打赏支持.  
-<img src="https://raw.githubusercontent.com/d86e/images/main/wechat_pay.jpg" width="20%">
+<img src="https://gitee.com/d86e/images/raw/main/wechat_pay.jpg" width="20%">
 
 ## 致敬感谢
 
